@@ -23,3 +23,9 @@ If you want to use it with AWS Lambda, comment out or uncomment the lambda_handl
 In the version on git, Notion is accessed and the result is printed, so comment it out and enable line 90 or 91 instead.
 
 If you want to use it on the command line, edit the lines from line 98 as you see fit.
+
+## Code description
+
+In Notion Database query, you can set filter and sort conditions. In this code, we filter by user ID and update date (updated today), and sort in reverse order (from lines 29 to 54).
+
+The results obtained are set to the return value of notion_fetch(), but pixela_pixelpost_today() and send_message() only use the number of items respectively. The return value of notion_fetch() is a dict type that contains various kinds of property information (e.g., page title), so it can be extracted and used.
