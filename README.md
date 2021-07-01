@@ -10,7 +10,7 @@ It is designed to be run in the AWS Lambda environment, but it can also be run o
 
 ## Usage
 
-## Advance preparation
+## Preparation
 To use the Notion API, prepare the **Notion access token**, the target **database ID**, and the **user ID** if you want to filter pages by user ID, and set them in lines 6, 7, and 8 of the source code.
 
 If you want to export to Pixe.la, prepare the **URL** of the target graph and **access token** of Pixe.la, and set them in lines 10 and 11 of the source code.
